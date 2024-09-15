@@ -21,7 +21,7 @@ Follow these steps to set up and run the application locally:
 
 1. Clone the Repository:
 ```bash
-git clone https://github.com/rajatbutola/GenerativeAI/Smart-Content-Creator.git
+git clone https://github.com/rajatbutola/Smart-Content-Creator.git
 cd content-generator-tool
 ```
 2. Create and Activate a Virtual Environment:
