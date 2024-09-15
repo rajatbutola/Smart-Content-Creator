@@ -19,18 +19,18 @@ This project is an automated content generation tool that creates blog posts bas
 ## Installation
 Follow these steps to set up and run the application locally:
 
-- 1. Clone the Repository:
+1. Clone the Repository:
 ```bash
 git clone https://github.com/ChandniAk/GenerativeAI/Automatic_Content_Generator.git
 cd content-generator-tool
 ```
-- 2. Create and Activate a Virtual Environment:
+2. Create and Activate a Virtual Environment:
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
-- 3. Install Required Packages:
+3. Install Required Packages:
  ```bash
 pip install -r requirements.txt
 
