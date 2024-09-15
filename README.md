@@ -30,3 +30,47 @@ cd content-generator-tool
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
+- 3. Install Required Packages:
+ ```bash
+pip install -r requirements.txt
+
+```
+## Usage
+Start the Flask Server:
+
+```bash
+python app.py
+```
+## Access the Web Interface:
+
+Open your web browser and go to http://127.0.0.1:5000.
+
+## Generate Blog Content:
+
+- Enter the topic you wish to generate content for.
+- Click the Generate button to receive an AI-generated blog post.
+
+## Configuration
+You can modify the text generation parameters such as temperature directly in the code. This controls the creativity and randomness of the generated content.
+
+```bash
+# Define a prompt template
+prompt = f"Generate a detailed blog post on the topic: {topic}"
+
+# Generate text with the Hugging Face model
+generated_text = model.generate(
+    input_ids=tokenizer.encode(prompt, return_tensors='tf'),
+    max_length=500,
+    num_return_sequences=1,
+    temperature=0.7  # Adjust temperature here
+)
+```
+```temperature```: Lower values (closer to 0) make the model more conservative and deterministic, while higher values introduce more creativity and randomness into the output.
+
+
+
+
+
+
+
+
